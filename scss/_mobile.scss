@@ -1,4 +1,41 @@
 /* Smartphones */
+
+// Stack Grid Columns
+@media(max-width: 600px) {
+  #home-a .options {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Stack in twos for Tablets
+@media(min-width: 601px) and (max-width: 1050px) {
+  #home-a .options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  // Navbar
+  #navbar {
+
+    ul {
+
+      li {
+        text-align: center;
+
+        a {
+          display: inline-block;
+          font-size: 0.8rem;
+
+          .on-mobile {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 500px) {
   // Navbar
   #navbar {
@@ -15,20 +52,13 @@
     }
   }
 
-    // Stack Grid Columns
-  #home-a .options {
-    grid-template-columns: 1fr;
-  }
-
   #home {
     &-a {
       .options div {
-        border-bottom: 1px solid $main-color;
         padding-bottom: 1rem;
         margin-bottom: 1.5rem;
 
         &:last-child {
-          border: none;
           padding-bottom: 0;
           margin-bottom: 0;
         }
@@ -51,6 +81,23 @@
 
         p {
           font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+// Tablets
+@media (max-width: 1050px) {
+  #home {
+    &-a {
+      .options div {
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+
+        &:last-child {
+          padding-bottom: 0;
+          margin-bottom: 0;
         }
       }
     }
