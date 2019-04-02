@@ -5,7 +5,7 @@
   padding: 0 2rem;
   overflow: hidden; }
 
-.btn-main {
+.btn-main, .btn-showcase {
   display: inline-block;
   padding: 0.8rem 2rem;
   transition: all 0.5s;
@@ -13,8 +13,62 @@
   cursor: pointer; }
 
 .btn-main {
-  color: #000;
-  background-color: #f4f4f4; }
+  color: #fff;
+  background-color: darkblue; }
+  .btn-main:hover {
+    background-color: #0000f1; }
+
+.btn-showcase {
+  color: darkblue;
+  background-color: #fff; }
+  .btn-showcase:hover {
+    background-color: #cccccc; }
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem; }
+
+.text-center {
+  text-align: center; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 2rem 0; }
+
+.my-3 {
+  margin: 3rem 0; }
+
+.my-4 {
+  margin: 4rem 0; }
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase; }
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: darkblue;
+  display: block;
+  margin: 0 auto 1rem auto; }
 
 * {
   margin: 0;
@@ -30,6 +84,9 @@ a {
   text-decoration: none;
   color: #000; }
 
+h2, h3, h4 {
+  text-transform: uppercase; }
+
 #navbar {
   display: flex;
   position: fixed;
@@ -39,8 +96,7 @@ a {
   background: #fff;
   justify-content: space-between;
   z-index: 1;
-  padding: 1rem;
-  border: 1px solid #eee; }
+  padding: 1rem; }
   #navbar ul {
     display: flex;
     align-items: center;
@@ -51,12 +107,13 @@ a {
       margin: 0 0.25rem;
       text-decoration: none; }
       #navbar ul li a:hover {
-        background: #eee;
+        background: darkblue;
+        color: #fff;
         border-radius: 0.5rem; }
 
 #showcase {
   color: #fff;
-  background: #ccc;
+  background: darkblue;
   padding: 2rem;
   position: relative; }
   #showcase:before {
@@ -83,6 +140,17 @@ a {
         font-size: 1.5rem;
         margin-bottom: 1rem; }
 
+#home-a .options {
+  margin-top: 3rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr); }
+  #home-a .options .fas {
+    color: darkblue;
+    padding-bottom: 0.6rem; }
+  #home-a .options .btn-main {
+    margin-top: 0.8rem; }
+
 /* Smartphones */
 @media (max-width: 500px) {
   #navbar {
@@ -92,7 +160,17 @@ a {
       margin-bottom: 0.5rem;
       text-align: center; }
     #navbar ul {
-      padding: 0.5rem; } }
+      padding: 0.5rem; }
+  #home-a .options {
+    grid-template-columns: 1fr; }
+  #home-a .options div {
+    border-bottom: 1px solid darkblue;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem; }
+    #home-a .options div:last-child {
+      border: none;
+      padding-bottom: 0;
+      margin-bottom: 0; } }
 
 @media (max-width: 600px) {
   #showcase .showcase-container {

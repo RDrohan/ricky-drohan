@@ -2,6 +2,7 @@
 @import 'utilities';
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 
+// General Styles
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +20,10 @@ a {
   color: #000;
 }
 
+h2, h3, h4 {
+  text-transform: uppercase;
+}
+
 // Navbar
 #navbar {
   display: flex;
@@ -30,7 +35,6 @@ a {
   justify-content: space-between;
   z-index: 1;
   padding: 1rem;
-  border: 1px solid #eee;
 
   ul {
     display: flex;
@@ -45,7 +49,8 @@ a {
         text-decoration: none;
 
         &:hover {
-          background: #eee;
+          background: $main-color;
+          color: #fff;
           border-radius: 0.5rem;
         }
       }
@@ -56,7 +61,7 @@ a {
 // Showcase
 #showcase {
   color: #fff;
-  background: #ccc;
+  background: $main-color;
   padding: 2rem;
   position: relative;
 
@@ -89,6 +94,28 @@ a {
       p {
         font-size: 1.5rem;
         margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+// Home Sections
+#home {
+  // Home Section A
+  &-a {
+    .options {
+      margin-top: 3rem;
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(4, 1fr);
+
+      .fas {
+        color: $main-color;
+        padding-bottom: 0.6rem;
+      }
+
+      .btn-main {
+        margin-top: 0.8rem;
       }
     }
   }
