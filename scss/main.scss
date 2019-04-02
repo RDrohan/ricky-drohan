@@ -111,13 +111,43 @@ h2, h3, h4 {
       grid-gap: 1rem;
       grid-template-columns: repeat(4, 1fr);
 
-      .fas {
-        color: $main-color;
-        padding-bottom: 0.6rem;
-      }
+      div {
 
-      .btn-main {
-        margin-top: 0.8rem;
+        .fas {
+          color: $main-color;
+          padding-bottom: 0.6rem;
+        }
+
+        .btn-main {
+          margin-top: 0.8rem;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// Footer
+#footer {
+  background: $main-color;
+  color: #fff;
+  height: 6rem;
+  margin-top: 2rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    align-items: center;
+
+    .social a .fab {
+      margin-right: 1.5rem;
+      padding: 0.5rem;
+      font-size: 2rem;
+      color: #fff;
+
+      &:hover {
+        color: darken(#fff, 20%);
       }
     }
   }

@@ -65,6 +65,17 @@
       }
     }
   }
+
+  // Footer
+  #footer {
+    height: 8rem;
+
+    .footer-content {
+      flex-direction: column;
+      padding: 2rem;
+      height: 8rem;
+    }
+  }
 }
 
 @media (max-width: 600px) {
