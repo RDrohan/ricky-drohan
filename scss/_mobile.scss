@@ -1,5 +1,6 @@
 /* Smartphones */
 @media (max-width: 500px) {
+  // Navbar
   #navbar {
     flex-direction: column;
     align-items: center;
@@ -11,6 +12,26 @@
 
     ul {
       padding: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  // Showcase
+  #showcase {
+    .showcase-container {
+      grid-template-columns: 1fr;
+
+      .showcase-content {
+        
+        h1 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
     }
   }
 }
