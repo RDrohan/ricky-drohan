@@ -95,6 +95,9 @@ h2, h3, h4 {
   justify-content: space-between;
   z-index: 2;
   padding: 1rem; }
+  #navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold; }
   #navbar ul {
     display: flex;
     align-items: center;
@@ -104,7 +107,7 @@ h2, h3, h4 {
       padding: 0.75rem;
       margin: 0 0.25rem;
       text-decoration: none; }
-      #navbar ul li a:hover {
+      #navbar ul li a.current, #navbar ul li a:hover {
         background: darkblue;
         color: #fff;
         border-radius: 0.5rem; }
@@ -152,6 +155,23 @@ h2, h3, h4 {
     margin-top: 0.8rem;
     bottom: 0; }
 
+#about-a .about-info {
+  display: grid;
+  grid-template-areas: 'image bio-1 bio-1' 'bio-2 bio-2 bio-2';
+  grid-gap: 2.5rem; }
+  #about-a .about-info .image {
+    grid-area: image;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid darkblue;
+    box-shadow: 2px 2px 4px #333; }
+  #about-a .about-info .bio-1 {
+    grid-area: bio-1;
+    padding: 0.8rem; }
+  #about-a .about-info .bio-2 {
+    grid-area: bio-2;
+    padding: 0.8rem; }
+
 #footer {
   background: darkblue;
   color: #fff;
@@ -163,7 +183,6 @@ h2, h3, h4 {
     height: 6rem;
     align-items: center; }
     #footer .footer-content .social a .fab {
-      margin-right: 1.5rem;
       padding: 0.5rem;
       font-size: 2rem;
       color: #fff; }
@@ -203,6 +222,8 @@ h2, h3, h4 {
     #home-a .options div:last-child {
       padding-bottom: 0;
       margin-bottom: 0; }
+  #about-a .about-info {
+    grid-template-areas: 'image' 'bio-1' 'bio-2'; }
   #footer {
     height: 8rem; }
     #footer .footer-content {

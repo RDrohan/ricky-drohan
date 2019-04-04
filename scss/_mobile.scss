@@ -51,7 +51,8 @@
       padding: 0.5rem;
     }
   }
-
+  
+  // Home
   #home {
     &-a {
       .options div {
@@ -62,6 +63,18 @@
           padding-bottom: 0;
           margin-bottom: 0;
         }
+      }
+    }
+  }
+
+  // About
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          'image'
+          'bio-1'
+          'bio-2';
       }
     }
   }
