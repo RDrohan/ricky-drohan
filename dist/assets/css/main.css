@@ -89,7 +89,6 @@ h2, h3, h4 {
 
 #navbar {
   display: flex;
-  position: sticky;
   top: 0;
   background: #fff;
   justify-content: space-between;
@@ -246,3 +245,23 @@ h2, h3, h4 {
     #home-a .options div:last-child {
       padding-bottom: 0;
       margin-bottom: 0; } }
+
+@media (max-height: 580px) {
+  #showcase .showcase-container {
+    height: 20rem; }
+    #showcase .showcase-container .showcase-content h1 {
+      font-size: 2rem;
+      margin-bottom: 0.3rem; }
+    #showcase .showcase-container .showcase-content p {
+      font-size: 1rem;
+      margin-bottom: .5rem; } }
+
+@media (max-height: 330px) {
+  #showcase .showcase-container {
+    height: 15rem; }
+    #showcase .showcase-container .showcase-content h1 {
+      font-size: 2rem;
+      margin-bottom: 0.3rem; }
+    #showcase .showcase-container .showcase-content p {
+      font-size: 1rem;
+      margin-bottom: .5rem; } }
