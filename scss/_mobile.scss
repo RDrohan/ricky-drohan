@@ -96,6 +96,7 @@
   #showcase {
     .showcase-container {
       grid-template-columns: 1fr;
+      height: 30rem;
 
       .showcase-content {
         
@@ -129,33 +130,11 @@
 }
 
 // Landscape
-@media(max-height: 580px) {
+@media(orientation: landscape) {
   #showcase {
 
     .showcase-container {
-      height: 20rem;
-
-      .showcase-content {
-
-        h1 {
-          font-size: 2rem;
-          margin-bottom: 0.3rem;
-        }
-
-        p {
-          font-size: 1rem;
-          margin-bottom: .5rem;
-        }
-      }
-    }
-  }
-}
-
-@media(max-height: 330px) {
-  #showcase {
-
-    .showcase-container {
-      height: 15rem;
+      height: 30rem;
 
       .showcase-content {
 

@@ -232,7 +232,8 @@ h2, h3, h4 {
 
 @media (max-width: 600px) {
   #showcase .showcase-container {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    height: 30rem; }
     #showcase .showcase-container .showcase-content h1 {
       font-size: 2rem; }
     #showcase .showcase-container .showcase-content p {
@@ -246,19 +247,9 @@ h2, h3, h4 {
       padding-bottom: 0;
       margin-bottom: 0; } }
 
-@media (max-height: 580px) {
+@media (orientation: landscape) {
   #showcase .showcase-container {
-    height: 20rem; }
-    #showcase .showcase-container .showcase-content h1 {
-      font-size: 2rem;
-      margin-bottom: 0.3rem; }
-    #showcase .showcase-container .showcase-content p {
-      font-size: 1rem;
-      margin-bottom: .5rem; } }
-
-@media (max-height: 330px) {
-  #showcase .showcase-container {
-    height: 15rem; }
+    height: 30rem; }
     #showcase .showcase-container .showcase-content h1 {
       font-size: 2rem;
       margin-bottom: 0.3rem; }
