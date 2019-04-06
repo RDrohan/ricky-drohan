@@ -112,6 +112,13 @@
   }
 }
 
+// Stack for Technologies
+@media (max-width: 900px) {
+  #technology-b .technologies {
+    grid-template-columns: 1fr;
+  }
+}
+
 // Tablets
 @media (max-width: 1050px) {
   #home {
@@ -128,6 +135,8 @@
     }
   }
 }
+
+
 
 // Landscape
 @media(orientation: landscape) {

@@ -180,6 +180,39 @@ h2, h3, h4 {
     grid-area: bio-2;
     padding: 0.8rem; }
 
+#technology-b .technologies {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr; }
+  #technology-b .technologies .tech-box {
+    padding: 2rem;
+    background: darkblue;
+    transition: all 0.4s ease-in;
+    border-radius: 0.5rem;
+    color: #fff; }
+    #technology-b .technologies .tech-box:hover {
+      background: #0000f1; }
+    #technology-b .technologies .tech-box .fas, #technology-b .technologies .tech-box .fab {
+      margin-bottom: 1rem; }
+    #technology-b .technologies .tech-box .tech-header {
+      font-size: 1.4rem;
+      margin-bottom: 1rem; }
+    #technology-b .technologies .tech-box .tech-text {
+      text-align: justify;
+      margin-bottom: 1rem; }
+    #technology-b .technologies .tech-box .pills .pill {
+      background: #fff;
+      border-radius: 0.5rem;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      color: darkblue;
+      cursor: pointer; }
+      #technology-b .technologies .tech-box .pills .pill:hover {
+        background: #cccccc; }
+      #technology-b .technologies .tech-box .pills .pill:not(:last-child) {
+        margin: 0 0.25rem 0.25rem 0; }
+
 #footer {
   background: darkblue;
   color: #fff;
@@ -247,6 +280,10 @@ h2, h3, h4 {
       font-size: 2rem; }
     #showcase .showcase-container .showcase-content p {
       font-size: 1rem; } }
+
+@media (max-width: 900px) {
+  #technology-b .technologies {
+    grid-template-columns: 1fr; } }
 
 @media (max-width: 1050px) {
   #home-a .options div {
