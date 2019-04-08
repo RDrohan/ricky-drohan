@@ -99,3 +99,10 @@
   display: block;
   margin: 0 auto 1rem auto;
 }
+
+.bg {
+  &-main {
+    background: $main-color;
+    color: #fff;
+  }
+}

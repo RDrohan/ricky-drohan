@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Ricky Drohan | Contact Me</title>
+</head>
+
+<body>
+  <div id="webpage">
+    <!-- Navbar -->
+    <div id="navbar-container">
+      <div class="container">
+        <nav id="navbar">
+          <a class="logo" href="index.html">
+            Ricky Drohan
+          </a>
+          <ul>
+            <li><a href="about.html"><i class="fas fa-user on-mobile"></i> About</a></li>
+            <li><a href="technologies.html"><i class="fas fa-laptop-code on-mobile"></i> Technologies</a></li>
+            <li><a href="projects.html"><i class="fas fa-project-diagram on-mobile"></i> Projects</a></li>
+            <li><a class="current" href="contact.html"><i class="fas fa-envelope on-mobile"></i> Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Section A: Form -->
+    <section id="contact-a" class="text-center py-3">
+      <div class="container">
+        <h1 class="section-title">Contact Me</h1>
+        <div class="bottom-line"></div>
+        <p class="lead">Looking for developer with 2 years full stack JavaScript development? Complete the form and I'll
+          get back to you!</p>
+        <form method="POST" data-netlify-recaptcha="true" data-netlify="true">
+          <div class="text-fields">
+            <input type="text" class="text-input name-input" name="name" placeholder="Name">
+            <input type="text" class="text-input subject-input" name="subject" placeholder="Subject">
+            <input type="email" class="text-input email-input" name="email" placeholder="Email Address">
+            <input type="text" class="text-input phone-input" name="phone" placeholder="Phone">
+            <textarea class="text-input message-input" name="message" placeholder="Enter Message"></textarea>
+            <div class="my-2">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+          </div>
+          <button type="submit" class="btn-main">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section B: Tagline -->
+    <section id="contact-b" class="bg-main py-4">
+      <div class="container">
+        <h2>Getting in touch is easy!</h2>
+        <p></p>
+      </div>
+    </section>
+
+    <!-- Section C: Contact Info -->
+    <section id="contact-c" class="py-3">
+      <div class="container">
+        <div class="contact-info">
+          <div>
+            <i class="fas fa-envelope fa-5x"></i>
+            <h3>Email</h3>
+            <p>rdrohanirl@yahoo.ie</p>
+          </div>
+          <div>
+            <i class="fas fa-phone fa-5x"></i>
+            <h3>Phone</h3>
+            <p>+353 87 9124961</p>
+          </div>
+          <div>
+            <i class="fas fa-address-card fa-5x"></i>
+            <h3>Address</h3>
+            <p>19 The Moorings, Ballinakill, Waterford, Ireland</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" style="margin-top: 0;">
+      <div class="footer-content container">
+        <p>Copyright &copy; <span id="current-year"></span>. All Rights Reserved.</p>
+        <div class="social">
+          <a href="https://github.com/RDrohan"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/ricky.drohan"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/rickydrohan/"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -2,7 +2,8 @@
 
 // Stack Grid Columns
 @media(max-width: 600px) {
-  #home-a .options {
+  #home-a .options,
+  #contact-c .contact-info {
     grid-template-columns: 1fr;
   }
 }
@@ -79,6 +80,20 @@
     }
   }
 
+  // Contact
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          'name'
+          'subject'
+          'email'
+          'phone'
+          'message';
+      }
+    }
+  }
+
   // Footer
   #footer {
     height: 8rem;
@@ -106,6 +121,26 @@
 
         p {
           font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  #contact {
+    &-b {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    &-c {
+      .contact-info div {
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+
+        &:last-child {
+          margin-bottom: 0;
+          padding-bottom: 0;
         }
       }
     }
