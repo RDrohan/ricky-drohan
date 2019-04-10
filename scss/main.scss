@@ -179,7 +179,7 @@ h2, h3, h4 {
   }
 }
 
-// Technology Sections
+// Technology and Project Sections
 #technology {
   &-b {
     .technologies {
@@ -194,6 +194,12 @@ h2, h3, h4 {
         transition: all 0.4s ease-in;
         border-radius: 0.5rem;
         color: #fff;
+
+        .text-center {
+          .btn-showcase {
+            margin-bottom: 1rem;
+          }
+        }
 
         &:hover {
           background: lighten($main-color, 20%);
@@ -211,6 +217,14 @@ h2, h3, h4 {
         .tech-text {
           text-align: justify;
           margin-bottom: 1rem;
+
+          .project-link {
+            color: #fff;
+
+            &:hover {
+              color: darken(#fff, 20%);
+            }
+          }
         }
 
         .pills {
